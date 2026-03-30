@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'gay';
+    src: url('fontstyle/HappySwirly-KVB7l.ttf');
+}
+*{
+    font-family: 'gay';
+    word-spacing: 10px;
+}

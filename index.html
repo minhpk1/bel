@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng sinh nhật Cô Ngát!</title>
+    <style>
+        /* Thiết lập nền và phông chữ */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #fce38a, #f38181);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Khung chứa nội dung chính */
+        .card {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            animation: popIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            max-width: 90%;
+            width: 400px;
+            position: relative;
+        }
+
+        /* Tiêu đề */
+        h1 {
+            color: #e84545;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            animation: pulse 2s infinite;
+        }
+
+        /* Hiệu ứng và định dạng cho ảnh */
+        .image-container img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #fce38a;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.08) rotate(5deg);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+            border-color: #f38181;
+        }
+
+        /* Lời chúc */
+        .message {
+            font-size: 1.2em;
+            color: #2b2e4a;
+            margin-top: 25px;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        /* --- Animations (Hiệu ứng) --- */
+        @keyframes popIn {
+            0% { opacity: 0; transform: scale(0.5) translateY(50px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        /* Pháo giấy trang trí (tùy chọn bằng CSS) */
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #fce38a;
+            border-radius: 50%;
+            top: -20px;
+            animation: fall 3s linear infinite;
+        }
+        
+        .c1 { left: 10%; background-color: #ff9999; animation-delay: 0s; }
+        .c2 { left: 30%; background-color: #99ff99; animation-delay: 1.5s; }
+        .c3 { left: 50%; background-color: #9999ff; animation-delay: 0.5s; }
+        .c4 { left: 70%; background-color: #ffff99; animation-delay: 2s; }
+        .c5 { left: 90%; background-color: #ff99ff; animation-delay: 1s; }
+
+        @keyframes fall {
+            0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(500px) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="confetti c1"></div>
+        <div class="confetti c2"></div>
+        <div class="confetti c3"></div>
+        <div class="confetti c4"></div>
+        <div class="confetti c5"></div>
+
+        <h1>🎂 Chúc Mừng Sinh Nhật 🎂<br>Cô Ngát!</h1>
+        
+        <div class="image-container">
+            <img src="images/congat.jpg" alt="Cô Ngát Xinh Đẹp">
+        </div>
+        
+        <p class="message">
+            Chúc cô bước sang tuổi mới luôn dồi dào sức khỏe, tràn ngập niềm vui, mãi luôn rạng rỡ và gặt hái được nhiều thành công hơn nữa! 💖
+        </p>
+    </div>
+
+</body>
+</html>
